@@ -7,7 +7,7 @@ import Theme from "./Theme";
 const Header = () => {
   return (
     <>
-      <div className="h-16   lg:xl:px-44 px-10 sm:md:px-10 w-full min-w-[350px]  pt-4 border border-b-2">
+      <div className="h-16 lg:xl:px-44 px-10 sm:md:px-10 w-full min-w-[420px] mx-auto pt-4 border border-b-2">
         <div className="flex align-middle justify-between max-w-[1170px] ">
           <div className="flex">
             <img
