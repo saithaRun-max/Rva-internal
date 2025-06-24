@@ -3,13 +3,14 @@
 
 import React from "react";
 import Header from "./header/Header";
-import Main from "./body/userSection/UserMain";
+
+import BodyMain from "./body/BodyMain";
 
 const App = () => {
   return (
     <div className=" ">
       <Header />
-      <Main />
+      <BodyMain />
     </div>
   );
 };

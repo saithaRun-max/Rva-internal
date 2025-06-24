@@ -1,12 +1,10 @@
-import BodyMain from "@/userComponents/body/BodyMain";
-import Header from "@/userComponents/header/Header";
+import App from "@/userComponents/App";
 
 
 export default function Home() {
   return (
     <>
-    <Header />
-      <BodyMain />
+      <App />
     </>
   );
 }
