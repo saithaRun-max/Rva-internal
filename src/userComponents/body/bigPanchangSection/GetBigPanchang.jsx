@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import AscendentIcon from "./AscendentIcon";
+import PanchangIconComponent from "./PanchangIconComponent";
 
 import {
   ascendentIcon,
@@ -13,20 +13,23 @@ import {
   horaSaturnIcon,
   sunRiseIcon,
   sunSetIcon,
+  asleshaIcon,
+  purvaPalgoniIcon,
 } from "@/lib/panchangConstants";
 
 const GetBigPanchang = () => {
   return (
-    <div className="h-28 px-9 py-4  border rounded-sm flex justify-between align-middle shadow-none ">
-      <AscendentIcon icon={ascendentIcon} name={"Ascendent"} />
-      <AscendentIcon icon={mrigasiraIcon} name={"Nakshtra"} />
-      <AscendentIcon icon={yogaGandIcon} name={"Yoga"} />
-      <AscendentIcon icon={karnaBalavIcon} name={"Karna"} />
-      <AscendentIcon icon={horaSaturnIcon} name={"Hora"} />
-      <AscendentIcon icon={sunRiseIcon} name={"Sun Rise"} />
-      <AscendentIcon icon={sunSetIcon} name={"Sun Set"} />
-      <AscendentIcon icon={moonRiseIcon} name={"Moon Rise"} />
-      <AscendentIcon icon={moonSetIcon} name={"Moon Set"} />
+    <div className="h-28 px-8 pt-4 mt-4 border border-[lightgray] dark:border-[#2b2f3c] rounded-[4px] flex justify-between align-middle shadow-none ">
+      <PanchangIconComponent icon={ascendentIcon} name={"Ascendent"} />
+      <PanchangIconComponent icon={mrigasiraIcon} name={"Nakshtra"} type="imgage" />
+      <PanchangIconComponent icon={""} name={"Thidi"} />
+      <PanchangIconComponent icon={yogaGandIcon} name={"Yoga"} />
+      <PanchangIconComponent icon={karnaBalavIcon} name={"Karna"} />
+      <PanchangIconComponent icon={horaSaturnIcon} name={"Hora"} />
+      <PanchangIconComponent icon={sunRiseIcon} name={"18:47:41"} />
+      <PanchangIconComponent icon={sunSetIcon} name={"Sun Set"} />
+      <PanchangIconComponent icon={moonRiseIcon} name={"18:47:41"} />
+      <PanchangIconComponent icon={moonSetIcon} name={"Moon Set"} />
     </div>
   );
 };

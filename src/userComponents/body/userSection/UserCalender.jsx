@@ -34,8 +34,6 @@ const UserCalender = () => {
   const [month, setMonth] = useState("");
   const [value, setValue] = useState(formatDate(date));
 
-  console.log(value);
-
   return (
     <div className="flex  ">
       <div className="flex flex-col gap-3">
@@ -44,7 +42,7 @@ const UserCalender = () => {
             id="date"
             value={value}
             placeholder="June 01, 2025"
-            className="bg-background pr-4 h-[41px] w-[150px] shadow-none rounded-sm "
+            className="bg-background pr-4 h-[39px] w-[150px] shadow-none rounded-sm text-sm"
             onChange={(e) => {
               const date = new Date(e.target.value);
               setValue(e.target.value);
@@ -65,7 +63,7 @@ const UserCalender = () => {
               <Button
                 id="date-picker"
                 variant="ghost"
-                className="absolute top-5 right-1 size-7 -translate-y-1/2"
+                className="absolute top-5 right-1 size-7 -translate-y-1/2 dark:bg-black dark:text-white"
               >
                 <CalendarIcon className="size-3.5" />
                 {!date && <span className="sr-only">Select date</span>}
@@ -81,6 +79,7 @@ const UserCalender = () => {
                 mode="single"
                 selected={date}
                 captionLayout="dropdown"
+                className="dark:bg-black dark:text-white"
                 month={month}
                 // animate
                 onMonthChange={setMonth}

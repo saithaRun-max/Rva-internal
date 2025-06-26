@@ -8,7 +8,7 @@ import FilterButtonsCharts from "./topFilterButtonsSection/FilterButtonsCharts";
 
 const BodyMain = () => {
   return (
-    <div className=" w-full min-w-[390px] max-w-[1160px] mx-auto">
+    <div className=" w-full min-w-[390px] max-w-[1152px] mx-auto">
       <UserMain />
 
       <GetBigPanchang />

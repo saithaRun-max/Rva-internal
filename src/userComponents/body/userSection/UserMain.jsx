@@ -17,7 +17,8 @@ const UserMain = () => {
         id="Name"
         type="text"
         placeholder="Name"
-        className="h-[41px] w-[270px] shadow-none rounded-sm "
+        autoComplete= "off"
+        className="h-10 w-[270px] shadow-none rounded-sm pl-7 "
         required
         value={name}
         onChange={(e) => setName(e.target.value)}

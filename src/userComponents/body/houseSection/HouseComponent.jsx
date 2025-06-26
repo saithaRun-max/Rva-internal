@@ -48,55 +48,55 @@ const HouseComponent = () => {
     <>
     
       <div>
-        <div className="w-[360px] border border-black  object-cover ">
-          <div className="w-[360px] h-[90px]  border-b border-gray-900 dark:border-gray-700 box-content flex ">
-            <div className="border-r border-gray-900 px-0.5 pl-1 m-0 w-[90px] h-full ">
+        <div className="w-[360px] border border-black dark:border-gray-200  object-cover ">
+          <div className="w-[360px] h-[90px]  border-b border-gray-900 dark:border-gray-200 box-content flex ">
+            <div className="border-r border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
               <span className="wrap-anywhere ">12</span>
             </div>
-            <div className="border-r border-gray-900 px-0.5 pl-1 m-0 w-[90px] h-full ">
+            <div className="border-r border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
               <span className="wrap-anywhere">{"1"}</span>
             </div>
-            <div className="border-r border-gray-900 px-0.5 pl-1 m-0 w-[90px] h-full ">
+            <div className="border-r border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
               <span className="wrap-anywhere">{"2"}</span>
             </div>
-            <div className=" border-gray-900 px-0.5 pl-1 m-0 w-[90px] h-full ">
+            <div className="  px-0.5 pl-1 m-0 w-[90px] h-full ">
               <span className="wrap-anywhere">{"3"}</span>
             </div>
           </div>
 
-          <div className="w-[360px] h-[90px] border-gray-900 dark:border-gray-700 box-content flex ">
-            <div className=" border-b border-gray-900 px-0.5 pl-1 m-0 w-[89px] h-full ">
+          <div className="w-[360px] h-[90px] border-gray-900 dark:border-gray-200 box-content flex ">
+            <div className=" border-b border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[89px] h-full ">
               <span className="wrap-anywhere">11</span>
             </div>
 
-            <div className="border-x border-gray-900 p-2 m-0 w-[181px] h-[180px] ">
+            <div className="border-x border-gray-900 dark:border-gray-200 p-2 m-0 w-[181px] h-[180px] ">
               <span className="wrap-anywhere">Name</span>
             </div>
-            <div className=" border-b border-gray-900 px-0.5 pl-1 m-0 w-[90px] h-full ">
+            <div className=" border-b border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
               <span className="wrap-anywhere">4</span>
             </div>
           </div>
 
-          <div className="w-[360px] h-[90px]  border-b border-gray-900 dark:border-gray-700 box-content flex justify-between">
-            <div className=" border-gray-900 px-0.5 pl-1 m-0 w-[90px] h-full ">
+          <div className="w-[360px] h-[90px]  border-b border-gray-900 dark:border-gray-200  box-content flex justify-between">
+            <div className="  px-0.5 pl-1 m-0 w-[90px] h-full ">
               <span className="wrap-anywhere">10</span>
             </div>
 
-            <div className=" border-gray-900 px-0.5 pl-1 m-0 w-[90px] h-full ">
+            <div className="  px-0.5 pl-1 m-0 w-[90px] h-full ">
               <span className="wrap-anywhere">5</span>
             </div>
           </div>
-          <div className="w-[360px] h-[90px]  border-gray-900 dark:border-gray-700 box-content flex ">
-            <div className="border-r border-gray-900 px-0.5 pl-1 m-0 w-[90px] h-full ">
+          <div className="w-[360px] h-[90px]   box-content flex ">
+            <div className="border-r border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
               <span className="wrap-anywhere">9</span>
             </div>
-            <div className="border-r border-gray-900 px-0.5 pl-1 m-0 w-[90px] h-full ">
+            <div className="border-r border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
               <span className="wrap-anywhere">8</span>
             </div>
-            <div className="border-r border-gray-900 px-0.5 pl-1 m-0 w-[90px] h-full ">
+            <div className="border-r border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
               <span className="wrap-anywhere">7</span>
             </div>
-            <div className=" border-gray-900 px-0.5 pl-1 m-0 w-[90px] h-full ">
+            <div className="  px-0.5 pl-1 m-0 w-[90px] h-full ">
               <span className="wrap-anywhere">6</span>
             </div>
           </div>
