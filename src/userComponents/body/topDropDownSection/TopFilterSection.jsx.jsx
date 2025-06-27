@@ -17,7 +17,7 @@ const TopFilterSection = () => {
       <Language />
       <ChartType />
       <GrahaHiding />
-      {/* <Aspects /> */}
+      <Aspects />
       <Ayanmasha />
       <HouseSystem />
       <ChartHiding />

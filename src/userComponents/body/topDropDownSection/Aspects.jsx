@@ -18,8 +18,8 @@ const Aspects = () => {
         <SelectTrigger className="border rounded-[4px]  text-[12px] dark:bg-none">
           <SelectValue placeholder="Aspects" />
         </SelectTrigger>
-        <SelectContent className="shadow-none flex-none" >
-          <SelectItem>
+        <SelectContent className="shadow-none flex-none">
+          {/* <SelectItem>
             {" "}<span>  <Checkbox id="progression" checked="true" /></span>
           <span>Progression</span>
             
@@ -28,7 +28,7 @@ const Aspects = () => {
             <span> <Checkbox id="transit" checked="true" /></span>
            
             <span>Transit</span>
-          </SelectItem>
+          </SelectItem> */}
         </SelectContent>
       </Select>
     </div>
