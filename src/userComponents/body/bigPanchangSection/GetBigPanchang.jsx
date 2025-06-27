@@ -21,7 +21,11 @@ const GetBigPanchang = () => {
   return (
     <div className="h-28 px-8 pt-4 mt-4 border border-[lightgray] dark:border-[#2b2f3c] rounded-[4px] flex justify-between align-middle shadow-none ">
       <PanchangIconComponent icon={ascendentIcon} name={"Ascendent"} />
-      <PanchangIconComponent icon={mrigasiraIcon} name={"Nakshtra"} type="imgage" />
+      <PanchangIconComponent
+        icon={mrigasiraIcon}
+        name={"Nakshtra"}
+        type="imgage"
+      />
       <PanchangIconComponent icon={""} name={"Thidi"} />
       <PanchangIconComponent icon={yogaGandIcon} name={"Yoga"} />
       <PanchangIconComponent icon={karnaBalavIcon} name={"Karna"} />
