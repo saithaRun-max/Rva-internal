@@ -1,3 +1,47 @@
+export const sunSvg = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.25"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="lucide lucide-sun-icon lucide-sun"
+  >
+    <circle cx="12" cy="12" r="4" />
+    <path d="M12 2v2" />
+    <path d="M12 20v2" />
+    <path d="m4.93 4.93 1.41 1.41" />
+    <path d="m17.66 17.66 1.41 1.41" />
+    <path d="M2 12h2" />
+    <path d="M20 12h2" />
+    <path d="m6.34 17.66-1.41 1.41" />
+    <path d="m19.07 4.93-1.41 1.41" />
+  </svg>
+);
+
+export const moonSvg = (
+  <svg
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium header-icons css-1c80anv-MuiSvgIcon-root"
+    focusable="false"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+    data-testid="MoonIcon"
+    fill="black"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+    </svg>
+  </svg>
+);
+
 export const dashaData = {
   chera: {
     subArr: [

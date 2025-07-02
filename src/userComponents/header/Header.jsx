@@ -4,6 +4,8 @@ import React from "react";
 import Theme from "./Theme";
 import { useTheme } from "next-themes";
 import { DM_Sans } from "next/font/google";
+import { Button } from "@/components/ui/button";
+import Login from "./Login";
 
 const inter = DM_Sans({
   subsets: ["latin"],
@@ -17,7 +19,7 @@ const Header = () => {
     <>
       <div className="w-screen h-14 border border-b box-border ">
         <div className=" min-w-[390px]  max-w-[1210px] mx-auto ">
-          <div className="pt-3 ">
+          <div className="pt-3 pr-2 ">
             <div className="flex align-middle justify-between  ">
               <div className="flex">
                 <img
@@ -33,15 +35,20 @@ const Header = () => {
                   className={`font-[sans-serif] text-[13px] font-medium opacity-50  text-black dark:text-white dark:opacity-100  md:flex md:ml-1 lg:ml-1   align-middle mt-1 hidden md:visible `}
                 >
                   <h5 className="">Charts</h5>
-                  <h5 className=" ml-8">Graphs</h5>
-                  <h5 className=" ml-8">Dasha</h5>
-                  <h5 className=" ml-8">KP Tables</h5>
-                  <h5 className=" ml-8">Aspects</h5>
-                  <h5 className=" ml-8">Strength</h5>
+                  <h5 className=" ml-6">Graphs</h5>
+                  <h5 className=" ml-6">Dasha</h5>
+                  <h5 className=" ml-6">KP Tables</h5>
+                  <h5 className=" ml-6">Aspects</h5>
+                  <h5 className=" ml-6">Strength</h5>
                 </div>
               </div>
-              <div className="-mt-1">
-                <Theme />
+              <div className=" flex ">
+                <div className="mr-2">
+                  <Theme />
+                </div>
+                <div className=" ">
+                  <Login />
+                </div>
               </div>
             </div>
           </div>

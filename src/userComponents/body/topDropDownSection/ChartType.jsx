@@ -11,7 +11,7 @@ const ChartType = () => {
   return (
     <div>
       <Select  className="">
-        <SelectTrigger className="border rounded-[4px]  text-[12px] dark:bg-none">
+        <SelectTrigger className="border rounded-[4px] w-28  text-[12px] dark:bg-none">
           <SelectValue placeholder="Chart Type" />
         </SelectTrigger>
         <SelectContent className="shadow-none">

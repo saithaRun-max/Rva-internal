@@ -15,7 +15,7 @@ function formatDate(date) {
   if (!date) {
     return "Birth Date";
   }
-  return date.toLocaleDateString("en-US", {
+  return date.toLocaleDateString("en-GB", {
     day: "2-digit",
     month: "numeric",
     year: "numeric",
@@ -30,7 +30,7 @@ function isValidDate(date) {
 
 const UserCalender = () => {
   const [open, setOpen] = useState(false);
-  const [date, setDate] = useState(new Date("2025-03-01"));
+  const [date, setDate] = useState(new Date());
   const [month, setMonth] = useState("");
   const [value, setValue] = useState(formatDate(date));
 
@@ -41,8 +41,8 @@ const UserCalender = () => {
           <Input
             id="date"
             value={value}
-            placeholder="June 01, 2025"
-            className="bg-background pr-4 h-[39px] w-[150px] shadow-none rounded-sm text-sm"
+            placeholder="hh-mm-ss"
+            className="bg-background pr-4 h-10 w-[150px] shadow-none rounded-sm text-sm"
             onChange={(e) => {
               const date = new Date(e.target.value);
               setValue(e.target.value);

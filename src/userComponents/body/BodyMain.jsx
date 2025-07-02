@@ -4,7 +4,7 @@ import React from "react";
 import UserMain from "./userSection/UserMain";
 import GetBigPanchang from "./bigPanchangSection/GetBigPanchang";
 import HouseMain from "./houseSection/HouseMain";
-import FilterButtonsCharts from "./topFilterButtonsSection/FilterButtonsCharts";
+import FilterButtonsCharts from "./middleFiltersSection/MiddleFiltersMain";
 import TopFilterSection from "./topDropDownSection/TopFilterSection.jsx";
 
 const BodyMain = () => {

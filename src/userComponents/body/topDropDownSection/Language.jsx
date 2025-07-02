@@ -11,17 +11,20 @@ import {
 const Language = () => {
   return (
     <div>
-      <Select className="h-">
-        <SelectTrigger className="border rounded-[4px]  text-[12px] dark:bg-none">
+      <Select className="" asChild align="end">
+        <SelectTrigger className="border rounded-[4px] w-[86px] text-[12px] dark:bg-none">
           <SelectValue placeholder="Language" />
         </SelectTrigger>
-        <SelectContent className="shadow-none">
+        <SelectContent className="shadow-none h-[150px] w-[160px] ">
           <SelectItem value="English">English</SelectItem>
           <SelectItem value="Hindi">Hindi</SelectItem>
           <SelectItem value="Tamil">Tamil</SelectItem>
-          <SelectItem value="Telugu " >
-            Telugu
-          </SelectItem>
+          <SelectItem value="Telugu ">Telugu</SelectItem>
+          <SelectItem value="kannada ">Kannada</SelectItem>
+          <SelectItem value="malayalam ">Malayalam</SelectItem>
+          <SelectItem value="Chimpi ">Chimpi</SelectItem>
+          <SelectItem value="Hooo ">HHHHHHHHHHH</SelectItem>
+          <SelectItem value="jsjsj ">Roorkey</SelectItem>
         </SelectContent>
       </Select>
     </div>

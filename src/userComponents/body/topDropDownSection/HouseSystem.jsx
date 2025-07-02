@@ -11,7 +11,7 @@ const HouseSystem = () => {
   return (
     <div>
       <Select  className="">
-        <SelectTrigger className="border rounded-[4px]  text-[12px] dark:bg-none">
+        <SelectTrigger className="border rounded-[4px] w-[124px]  text-[12px] dark:bg-none">
           <SelectValue placeholder="House System" />
         </SelectTrigger>
         <SelectContent className="shadow-none">

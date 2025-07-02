@@ -1,3 +1,12 @@
+"use client";
+
+import { Checkbox } from "@/components/ui/checkbox";
+import {
+  DropdownMenu,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Label } from "@/components/ui/label";
 import {
   Select,
   SelectContent,
@@ -5,20 +14,24 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { CheckboxItem } from "@radix-ui/react-dropdown-menu";
 import React from "react";
+
+// import { Checkbox } from "radix-ui";
 
 const GrahaHiding = () => {
   return (
     <div>
-      <Select  className="">
+      <Select className="">
         <SelectTrigger className="border rounded-[4px]  text-[12px] dark:bg-none">
           <SelectValue placeholder="Graha Hiding" />
         </SelectTrigger>
-        <SelectContent className="shadow-none">
-          {/* <SelectItem value="northIndian">North Indian</SelectItem>
-          <SelectItem value="southIndian">South Indian</SelectItem>
-          <SelectItem value="eastIndian">East Indian</SelectItem> */}
-          
+        <SelectContent className="shadow-none align-middle">
+          <p className=" text-xs">
+            {" "}
+            <Checkbox className="h-4" />
+            {"All"}
+          </p>
         </SelectContent>
       </Select>
     </div>

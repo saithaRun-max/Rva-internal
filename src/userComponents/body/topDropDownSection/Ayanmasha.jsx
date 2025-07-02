@@ -12,15 +12,13 @@ const Ayanmasha = () => {
   return (
     <div>
       <Select className="">
-        <SelectTrigger className="border rounded-[4px]  text-[12px] dark:bg-none">
-          <SelectValue placeholder="Ayanmasha" />
+        <SelectTrigger className="border rounded-[4px] w-28 text-[12px] dark:bg-none">
+          <SelectValue placeholder="Ayanmasha" className="" />
         </SelectTrigger>
         <SelectContent className="shadow-none">
           <SelectItem value="Lahari">Lahari</SelectItem>
           <SelectItem value="KP">KP</SelectItem>
-          <SelectItem value="KPNew" >
-            KP New
-          </SelectItem>
+          <SelectItem value="KPNew">KP New</SelectItem>
           <SelectItem value="KpKjullar ">Kp Khullar</SelectItem>
           <SelectItem value="KpKStrightLine ">Kp Stright Line</SelectItem>
           <SelectItem value="yukteshwar ">Yukteshwar</SelectItem>

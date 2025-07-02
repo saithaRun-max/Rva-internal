@@ -11,7 +11,7 @@ const ChartHiding = () => {
   return (
     <div>
       <Select  className="">
-        <SelectTrigger className="border rounded-[4px]  text-[12px] dark:bg-none">
+        <SelectTrigger className="border rounded-[4px] w-[132px] text-[12px] dark:bg-none">
           <SelectValue placeholder="Chart Hiding" />
         </SelectTrigger>
         <SelectContent className="shadow-none">
