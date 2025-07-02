@@ -9,15 +9,19 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const ChartsDropdown = () => {
+const TransiteDropdown = () => {
   return (
     <div className="h-[40px] ">
-      <Select defaultValue="d1Chart" className="rounded-sm ">
-        <SelectTrigger className="w-[297px] py-5 rounded-sm ">
+      <Select defaultValue="transiteChart" className="rounded-sm ">
+        <SelectTrigger className="w-[360px] py-5 rounded-sm ">
           <SelectValue placeholder="d1 Chart" className="" />
         </SelectTrigger>
         <SelectContent className="h-60">
           <SelectGroup>
+            <SelectItem value="transiteChart">transite chart</SelectItem>
+            <SelectItem value="d2Chart">d2 Chart</SelectItem>
+            <SelectItem value="d3Chart">d3 Chart</SelectItem>
+            <SelectItem value="d4Chart">d4 Chart</SelectItem>
             <SelectItem value="d1Chart">d1Chart</SelectItem>
             <SelectItem value="d2Chart">d2 Chart</SelectItem>
             <SelectItem value="d3Chart">d3 Chart</SelectItem>
@@ -46,4 +50,4 @@ const ChartsDropdown = () => {
   );
 };
 
-export default ChartsDropdown;
+export default TransiteDropdown;
