@@ -11,6 +11,7 @@ import {
 import { useState } from "react";
 import UserCalender from "../userSection/UserCalender";
 import { Button } from "@/components/ui/button";
+import { useSelector } from "react-redux";
 
 const TransitSection = () => {
   const [name, setName] = useState("");
@@ -21,6 +22,15 @@ const TransitSection = () => {
   const [timeZone, setTimeZone] = useState("");
   const [country, setCountry] = useState("");
 
+  const store = useSelector((store) => store?.cart?.items);
+
+  // console.log(store?.name);
+
+  const userName = store?.name;
+  const userbirthTime = store?.birthTime;
+  const userCountry = store?.country;
+  const userBirthLocation = store?.birthLocation;
+
   return (
     <div>
       <Select className=" ">
@@ -28,24 +38,18 @@ const TransitSection = () => {
           <SelectValue placeholder="Transit" />
         </SelectTrigger>
         <SelectContent className="shadow-none h-[150px] mt-3">
-          <div className="w-[1142px] flex flex-wrap ">
+          <div className="w-[1142px] flex flex-wrap p-4 ">
             <Input
               id="Name"
               type="text"
-              // placeholder="Name"
               autoComplete="off"
-              className=" w-[270px] shadow-none rounded-sm pl-7 peer h-12 pt-6 placeholder-transparent "
+              className="h-10 w-[270px] shadow-none rounded-sm  "
               required
-              value={name}
+              value={userName}
               onChange={(e) => setName(e.target.value)}
             />
-            <label
-              htmlFor="name"
-              className="absolute left-3 top-3 text-sm text-gray-500 transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-sm peer-focus:text-blue-600"
-            >
-              Name
-            </label>
-            <div className="ml-2">
+
+            <div className="ml-4">
               <UserCalender />
             </div>
 
@@ -55,58 +59,61 @@ const TransitSection = () => {
               id="birthTime"
               placeholder="Time"
               required
-              value={birthTime}
+              value={userbirthTime}
               onChange={(e) => setBirthTime(e.target.value)}
-              className="bg-background appearance-none h-[41px] w-[150px] [&::-webkit-calendar-picker-indicator]:hidden [&::-webkit-calendar-picker-indicator]:appearance-none shadow-none ml-2 rounded-sm "
+              className="bg-background appearance-none h-10 w-[150px]  [&::-webkit-calendar-picker-indicator]:hidden [&::-webkit-calendar-picker-indicator]:appearance-none shadow-none ml-4 rounded-sm "
             />
 
             <Input
               id="country"
               type="text"
               placeholder="Country"
-              className="h-[41px] w-[150px] ml-2 rounded-sm  shadow-none"
+              className="h-10 w-[150px] ml-4 rounded-sm  shadow-none"
               required
-              value={country}
+              value={userCountry}
               onChange={(e) => setCountry(e.target.value)}
             />
-            <Input
-              id="birthLocation"
-              type="text"
-              placeholder="Birth Place"
-              className="h-[41px] w-[270px] rounded-sm  ml-2 shadow-none"
-              required
-              value={birthLocation}
-              onChange={(e) => setBirthLocation(e.target.value)}
-            />
-            <Input
-              id="latitude"
-              type="number"
-              placeholder="Latitude"
-              className="h-[41px] w-[270px] rounded-sm  ml-2 shadow-none"
-              required
-              value={latitude}
-              onChange={(e) => setLatitude(e.target.value)}
-            />
-            <Input
-              id="longitude"
-              type="number"
-              placeholder="Longitude"
-              className="h-[41px] w-[270px] rounded-sm  ml-2 shadow-none"
-              required
-              value={longitude}
-              onChange={(e) => setLongitude(e.target.value)}
-            />
-            <Input
-              id="timeZone"
-              type="number"
-              placeholder="Time-Zone"
-              className="h-[41px] w-[270px] rounded-sm  ml-2 shadow-none"
-              required
-              value={timeZone}
-              onChange={(e) => setTimeZone(e.target.value)}
-            />
-
-            <Button className="w-[120px] h-[41px] ml-2">Submit</Button>
+ <Input
+                id="birthLocation"
+                type="text"
+                placeholder="Birth Place"
+                className="h-10 w-[270px] rounded-sm  ml-4 shadow-none"
+                required
+                value={userBirthLocation}
+                onChange={(e) => setBirthLocation(e.target.value)}
+              />
+            <div className="mt-4 flex">
+              {" "}
+             
+              <Input
+                id="latitude"
+                type="number"
+                placeholder="Latitude"
+                className="h-10 w-[270px] rounded-sm   shadow-none"
+                required
+                value={latitude}
+                onChange={(e) => setLatitude(e.target.value)}
+              />
+              <Input
+                id="longitude"
+                type="number"
+                placeholder="Longitude"
+                className="h-10 w-[270px] rounded-sm  ml-4 shadow-none"
+                required
+                value={longitude}
+                onChange={(e) => setLongitude(e.target.value)}
+              />
+              <Input
+                id="timeZone"
+                type="number"
+                placeholder="Time-Zone"
+                className="h-10 w-[270px] rounded-sm  ml-4 shadow-none"
+                required
+                value={timeZone}
+                onChange={(e) => setTimeZone(e.target.value)}
+              />
+              <Button className="w-[120px] h-10 ml-4">Submit</Button>
+            </div>
           </div>
         </SelectContent>
       </Select>

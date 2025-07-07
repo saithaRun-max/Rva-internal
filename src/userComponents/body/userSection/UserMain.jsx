@@ -20,11 +20,31 @@ import { useState } from "react";
 import UserCalender from "./UserCalender";
 import { ChevronDown, Pencil, Save, Trash2 } from "lucide-react";
 
+import { MdOutlineLocationOn } from "react-icons/md";
+import { HiPencil } from "react-icons/hi";
+import { FaCloudDownloadAlt } from "react-icons/fa";
+import { RiDeleteBin2Fill, RiPencilFill } from "react-icons/ri";
+import { useDispatch } from "react-redux";
+import { addItem } from "@/ReduxStore/slices/cartSlice";
+
 const UserMain = () => {
-  const [name, setName] = useState("");
+  const [name, setName] = useState("User");
   const [birthTime, setBirthTime] = useState("10-25-00");
-  const [birthLocation, setBirthLocation] = useState("");
-  const [country, setCountry] = useState("");
+  const [birthLocation, setBirthLocation] = useState("Hyderabad");
+  const [country, setCountry] = useState("India");
+  const dispatch = useDispatch();
+
+  const handleData = () => {
+    dispatch(
+      addItem({
+        name: name,
+        birthTime: birthTime,
+        birthLocation: birthLocation,
+        country: country,
+      })
+    );
+  };
+
   return (
     <div className="w-full flex  mt-8 ">
       <Input
@@ -32,7 +52,7 @@ const UserMain = () => {
         type="text"
         placeholder="Name"
         autoComplete="off"
-        className="h-10 w-[270px] shadow-none rounded-sm pl-7 "
+        className="h-[40px] w-[270px] shadow-none rounded-sm pl-7 "
         required
         value={name}
         onChange={(e) => setName(e.target.value)}
@@ -61,50 +81,59 @@ const UserMain = () => {
         value={country}
         onChange={(e) => setCountry(e.target.value)}
       />
-      <Input
-        id="birthLocation"
-        type="text"
-        placeholder="Birth Place"
-        className="h-10 w-[270px] rounded-sm  ml-2 shadow-none"
-        required
-        value={birthLocation}
-        onChange={(e) => setBirthLocation(e.target.value)}
-      />
-      <div className=" w-[120px] h-10 ml-2 font-[helvetica] text-[14px]  pt-[2px] bg-[#151515] dark:bg-white dark:text-black rounded-sm">
-        <Button className=" hover:bg-[#151515] dark:bg-white dark:text-black hover:text-white text-white rounded-sm h-full m-0 w-full ">
+      <div className="h-10 w-[270px] border rounded-sm  ml-2 shadow-none p-2 pl-3 flex">
+        {" "}
+        <MdOutlineLocationOn className="text-2xl" />
+        <Input
+          id="birthLocation"
+          type="text"
+          placeholder="Birth Place"
+          className=" -mt-2 border-none"
+          required
+          value={birthLocation}
+          onChange={(e) => setBirthLocation(e.target.value)}
+        />
+      </div>
+      <div className=" w-[120px] h-10 ml-2 font-[helvetica] text-[14px]  pt-[2px] bg-[#151515] dark:bg-white dark:text-black rounded-sm flex align-middle">
+        <Button
+          className=" hover:bg-[#151515] dark:bg-white dark:text-black hover:text-white text-white rounded-sm h-full m-0 "
+          onClick={handleData}
+          key={"123"}
+        >
           {"Submit"}{" "}
-          <div className="border-1 dark:border-black opacity-60 ml-2 h-full"></div>
-          <DropdownMenu className=" ">
-            <DropdownMenuTrigger asChild className="">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="w-5 hover:bg-[#151515] hover:text-white dark:hover:bg-white dark:text-black "
-              >
-                <ChevronDown />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent
-              className="font-[helvetica] text-lg w-[150px]"
-              align="end"
-            >
-              <DropdownMenuGroup>
-                <DropdownMenuItem>
-                  <Pencil />
-                  <span className="ml-1">Edit</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Save />
-                  <span className="ml-1">Save</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Trash2 />
-                  <span className="ml-1">Delete</span>
-                </DropdownMenuItem>
-              </DropdownMenuGroup>
-            </DropdownMenuContent>
-          </DropdownMenu>
         </Button>
+
+        <div className="border-1 dark:border-black opacity-60 h-[70%] mt-1"></div>
+        <DropdownMenu className="">
+          <DropdownMenuTrigger asChild className="">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="w-5 hover:bg-[#151515] hover:text-white dark:hover:bg-white dark:text-black text-white ml-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+            >
+              <ChevronDown />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent
+            className="font-[helvetica] text-lg w-[150px] px-3"
+            align="end"
+          >
+            <DropdownMenuGroup>
+              <DropdownMenuItem>
+                <RiPencilFill />
+                <span className="ml-1">Edit</span>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <FaCloudDownloadAlt />
+                <span className="ml-1">Save</span>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <RiDeleteBin2Fill />
+                <span className="ml-1">Delete</span>
+              </DropdownMenuItem>
+            </DropdownMenuGroup>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </div>
   );

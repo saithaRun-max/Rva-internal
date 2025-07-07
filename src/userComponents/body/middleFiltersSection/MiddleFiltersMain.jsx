@@ -12,7 +12,7 @@ const middleFiltersMain = () => {
         <div className="ml-3 mt-3">
           <SwitchChart />
         </div>
-        <div className="ml-9">
+        <div className="ml-10">
           <ProgressionButtons />
         </div>
         <div className="ml-9">

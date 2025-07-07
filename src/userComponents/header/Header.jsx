@@ -3,17 +3,14 @@
 import React from "react";
 import Theme from "./Theme";
 import { useTheme } from "next-themes";
-import { DM_Sans } from "next/font/google";
-import { Button } from "@/components/ui/button";
-import Login from "./Login";
 
-const inter = DM_Sans({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+import Login from "./Login";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const { theme } = useTheme();
+  // const cartItems = useSelector((store) => store.cart.items);
+
 
   return (
     <>
@@ -32,7 +29,7 @@ const Header = () => {
                   className="w-20 h-7"
                 />
                 <div
-                  className={`font-[sans-serif] text-[13px] font-medium opacity-50  text-black dark:text-white dark:opacity-100  md:flex md:ml-1 lg:ml-1   align-middle mt-1 hidden md:visible `}
+                  className={`font-[sans-serif] text-[13px] font-medium opacity-50  text-black dark:text-white dark:opacity-100  md:flex md:ml-1 lg:ml-1 align-middle mt-1 hidden md:visible `}
                 >
                   <h5 className="">Charts</h5>
                   <h5 className=" ml-6">Graphs</h5>
@@ -41,6 +38,7 @@ const Header = () => {
                   <h5 className=" ml-6">Aspects</h5>
                   <h5 className=" ml-6">Strength</h5>
                 </div>
+                {/* <div>{cartItems.length}</div> */}
               </div>
               <div className=" flex ">
                 <div className="mr-2">

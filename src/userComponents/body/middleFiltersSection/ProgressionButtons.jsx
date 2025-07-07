@@ -1,5 +1,9 @@
-import { Minus } from "lucide-react";
 import { useState } from "react";
+import { BsPlus } from "react-icons/bs";
+import { HiOutlinePlus } from "react-icons/hi2";
+import { FaMinus } from "react-icons/fa";
+
+import { HiOutlineMinus } from "react-icons/hi2";
 
 const ProgressionButtons = () => {
   const year = 2025;
@@ -10,9 +14,9 @@ const ProgressionButtons = () => {
     <div className="flex justify-between w-[360px] font-[helvetica]">
       <div>
         <p className="text-[13px] font-semibold">{"Progression Chart"}</p>
-        <p className="text-sm font-light">
-          Date - {"02-07-2025"} <span>{"Age-0"}</span>
-        </p>
+        <pre className="text-[13px] opacity-80 font-[helvetica]">
+          DATE - {"02-06-2025"} AGE - {0}
+        </pre>
       </div>
       <div>
         <div className="w-[130px] h-10 border rounded-sm flex justify-between">
@@ -21,22 +25,7 @@ const ProgressionButtons = () => {
             className="w-8  border-r text pl-2"
             onClick={() => setCounter(counter - 1)}
           >
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-minus-icon lucide-minus"
-              >
-                <path d="M5 12h14" />
-              </svg>
-            </span>
+            <HiOutlineMinus />
           </button>
           <div>
             <p className="text-[13px] mt-2">{counter}</p>
@@ -46,23 +35,7 @@ const ProgressionButtons = () => {
             id="increaseBtn"
             onClick={() => setCounter(counter + 1)}
           >
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-plus-icon lucide-plus"
-              >
-                <path d="M5 12h14" />
-                <path d="M12 5v14" />
-              </svg>
-            </span>
+            <HiOutlinePlus />
           </button>
         </div>
       </div>

@@ -9,7 +9,7 @@ export const sunSvg = (
     stroke-width="1.25"
     stroke-linecap="round"
     stroke-linejoin="round"
-    class="lucide lucide-sun-icon lucide-sun"
+    className="lucide lucide-sun-icon lucide-sun"
   >
     <circle cx="12" cy="12" r="4" />
     <path d="M12 2v2" />
@@ -25,7 +25,7 @@ export const sunSvg = (
 
 export const moonSvg = (
   <svg
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium header-icons css-1c80anv-MuiSvgIcon-root"
+    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium header-icons css-1c80anv-MuiSvgIcon-root"
     focusable="false"
     viewBox="0 0 24 24"
     aria-hidden="true"
