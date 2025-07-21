@@ -6,6 +6,8 @@ import GetBigPanchang from "./bigPanchangSection/GetBigPanchang";
 import HouseMain from "./houseSection/HouseMain";
 import FilterButtonsCharts from "./middleFiltersSection/MiddleFiltersMain";
 import TopFilterSection from "./topDropDownSection/TopFilterSection.jsx";
+import ChartMain from "./GraphsSection/MyLineChart";
+import ChartMainSection from "./GraphsSection/ChartMainSection";
 
 const BodyMain = () => {
   return (
@@ -15,6 +17,7 @@ const BodyMain = () => {
       <GetBigPanchang />
       <FilterButtonsCharts />
       <HouseMain />
+      <ChartMainSection />
     </div>
   );
 };

@@ -11,7 +11,6 @@ const Header = () => {
   const { theme } = useTheme();
   // const cartItems = useSelector((store) => store.cart.items);
 
-
   return (
     <>
       <div className="w-screen h-14 border border-b box-border ">
@@ -21,8 +20,7 @@ const Header = () => {
               <div className="flex">
                 <img
                   src={
-                    theme == "dark"
-                      ? "https://app.rahasyavedicastrology.com/_next/static/media/rva-dark.1324b70c.svg"
+                   ( theme == "dark") ? "https://app.rahasyavedicastrology.com/_next/static/media/rva-dark.1324b70c.svg"
                       : "https://app.rahasyavedicastrology.com/_next/static/media/rva.0c5036ce.svg"
                   }
                   alt="logo"

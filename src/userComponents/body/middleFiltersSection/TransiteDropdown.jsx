@@ -56,7 +56,7 @@ const TransiteDropdown = () => {
         </Select>
       </div>
       <div className="ml-3 mt-2">
-        <label class="inline-flex items-center cursor-pointer">
+        <label className="inline-flex items-center cursor-pointer">
           <input
             type="checkbox"
             value="isTransitVisible"
