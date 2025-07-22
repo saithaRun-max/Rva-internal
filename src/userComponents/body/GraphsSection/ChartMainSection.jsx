@@ -3,13 +3,15 @@ import MyLineChart from "./MyLineChart";
 
 import ChatGptHorizontalBarChart from "./ChatGptHorizontalBarChart";
 import DashaLineChart from "./DashaLineChart";
+import MyBubblechart from "./MyBubblechart";
 
 const ChartMainSection = () => {
   return (
-    <div>
+    <div className="mt-12 h-[1000px]">
       <MyLineChart />
 
-      <DashaLineChart />
+      {/* <MyBubblechart /> */}
+      {/* <DashaLineChart /> */}
       {/* <ChatGptHorizontalBarChart /> */}
     </div>
   );

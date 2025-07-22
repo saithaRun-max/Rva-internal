@@ -3,6 +3,12 @@
 import { useEffect, useState } from "react";
 import { avargaData } from "@/lib/astakavargaConstants";
 
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+
 const HouseComponent = () => {
   // const [stractureData, setStractureData] = useState("");
 
@@ -46,58 +52,246 @@ const HouseComponent = () => {
 
   return (
     <>
-    
       <div>
-        <div className="w-[360px] border border-black dark:border-gray-200  object-cover ">
-          <div className="w-[360px] h-[90px]  border-b border-gray-900 dark:border-gray-200 box-content flex ">
-            <div className="border-r border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
-              <span className="wrap-anywhere ">12</span>
+        <div className="w-[360px] border-[#726f5f] border-[1px]  dark:border-[#ffffff]  object-cover bg-[#ffffdc] dark:bg-[#111318] text-[13px] font-medium font-[helvetica] ">
+          <div className="w-[359px] h-[90px]  border-b border-[#726f5f] dark:border-white box-content flex ">
+            <div className="border-r border-[#726f5f] dark:border-white p-0.5 pl-1 m-0 w-[90px] h-full leading-[13px]">
+              <p className="">
+                <span
+                  className="wrap-anywhere dark:text-[#f68e8e] text-[#FF0000]  hover:text-[#0F0AF0] "
+                  id="roman"
+                >
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
+
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
+
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
             </div>
-            <div className="border-r border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
-              <span className="wrap-anywhere">{"1"}</span>
+            <div className="border-r border-[#726f5f] dark:border-white p-0.5 pl-1 m-0 w-[90px] h-full leading-[13px]">
+              <p className="">
+                <span
+                  className="wrap-anywhere dark:text-[#f68e8e] text-[#FF0000] hover:text-[#0F0AF0] "
+                  id="roman"
+                >
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
+
+              <p>
+                <span className="wrap-anywhere dark:text-white  text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
+
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
             </div>
-            <div className="border-r border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
-              <span className="wrap-anywhere">{"2"}</span>
+            <div className="border-r border-[#726f5f] dark:border-white p-0.5 pl-1 m-0 w-[90px] h-full leading-[13px]">
+              <p className="">
+                <span
+                  className="wrap-anywhere dark:text-[#f68e8e]  text-[#FF0000] hover:text-[#0F0AF0] "
+                  id="roman"
+                >
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
+
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
+
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
             </div>
-            <div className="  px-0.5 pl-1 m-0 w-[90px] h-full ">
-              <span className="wrap-anywhere">{"3"}</span>
+            <div className="  p-0.5 pl-1 m-0 w-[90px] h-full leading-[13px] ">
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
             </div>
           </div>
 
-          <div className="w-[360px] h-[90px] border-gray-900 dark:border-gray-200 box-content flex ">
-            <div className=" border-b border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[89px] h-full ">
-              <span className="wrap-anywhere">11</span>
+          <div className="w-[359px] h-[90px] border-[#726f5f] dark:border-white box-content flex ">
+            <div className=" border-b border-[#726f5f] dark:border-white p-0.5 pl-1 m-0 w-[89.5px] h-full leading-[13px]">
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
             </div>
 
-            <div className="border-x border-gray-900 dark:border-gray-200 p-2 m-0 w-[181px] h-[180px] ">
-              <span className="wrap-anywhere">Name</span>
+            <div className="border-x border-[#726f5f] dark:border-white p-6 m-0 w-[181px] h-[180px] leading-5">
+              <div className="wrap-anywhere p-3">
+                <p>Name : {"Admin"}</p>
+                <p>Date : {"04-02-2025"}</p>
+                <p>Time : {"14:16:05"}</p>
+                <p>Latitude : {"14.8"}</p>
+                <p>Longitude : {"80.7"}</p>
+              </div>
             </div>
-            <div className=" border-b border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
-              <span className="wrap-anywhere">4</span>
+            <div className=" border-b border-[#726f5f] dark:border-white p-0.5 pl-1 m-0 w-[90px] h-full leading-[13px]">
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
             </div>
           </div>
 
-          <div className="w-[360px] h-[90px]  border-b border-gray-900 dark:border-gray-200  box-content flex justify-between">
-            <div className="  px-0.5 pl-1 m-0 w-[90px] h-full ">
-              <span className="wrap-anywhere">10</span>
+          <div className="w-[359px] h-[90px]  border-b border-[#726f5f] dark:border-white  box-content flex justify-between">
+            <div className="  p-0.5 pl-1 m-0 w-[90px] h-full leading-[13px] ">
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
             </div>
 
-            <div className="  px-0.5 pl-1 m-0 w-[90px] h-full ">
-              <span className="wrap-anywhere">5</span>
+            <div className="  p-0.5 pl-1 m-0 w-[90px] h-full leading-[13px]">
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
             </div>
           </div>
-          <div className="w-[360px] h-[90px]   box-content flex ">
-            <div className="border-r border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
-              <span className="wrap-anywhere">9</span>
+          <div className="w-[359px] h-[90px]   box-content flex ">
+            <div className="border-r border-[#726f5f] dark:border-white p-0.5 pl-1 m-0 w-[90px] h-full leading-[13px]">
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
             </div>
-            <div className="border-r border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
-              <span className="wrap-anywhere">8</span>
+            <div className="border-r border-[#726f5f] dark:border-white p-0.5 pl-1 m-0 w-[90px] h-full leading-[13px]">
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
             </div>
-            <div className="border-r border-gray-900 dark:border-gray-200 px-0.5 pl-1 m-0 w-[90px] h-full ">
-              <span className="wrap-anywhere">7</span>
+            <div className="border-r border-[#726f5f] dark:border-white p-0.5 pl-1 m-0 w-[90px] h-full leading-[13px]">
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
             </div>
-            <div className="  px-0.5 pl-1 m-0 w-[90px] h-full ">
-              <span className="wrap-anywhere">6</span>
+            <div className="  p-0.5 pl-1 m-0 w-[90px] h-full leading-[13px]">
+              <p>
+                <span className="wrap-anywhere dark:text-white text-black hover:text-[#FF1493] ">
+                  <Tooltip className="bg-[#7B7B75]">
+                    <TooltipTrigger>{"IIV 21:20:19"}</TooltipTrigger>
+                    <TooltipContent>
+                      {"Ju | Revati-2 | Me | Ju "}
+                    </TooltipContent>
+                  </Tooltip>
+                </span>
+              </p>
             </div>
           </div>
         </div>

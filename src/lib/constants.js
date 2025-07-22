@@ -46,163 +46,203 @@ export const graphData = [
   {
     year: 2001,
     value: -66,
+    value2: 9,
   },
   {
     year: 2002,
     value: -46,
+    value2: -40,
   },
   {
     year: 2003,
     value: 9,
+    value2: -17,
   },
   {
     year: 2004,
     value: -18,
+    value2: 23,
   },
   {
     year: 2005,
     value: -40,
+    value2: 54,
   },
   {
     year: 2006,
     value: -40,
+    value2: -1,
   },
   {
     year: 2007,
     value: -17,
+    value2: 0,
   },
   {
     year: 2008,
     value: 23,
+    value2: 70,
   },
   {
     year: 2009,
     value: 54,
+    value2: 110,
   },
   {
     year: 2010,
     value: -1,
+    value2: 10,
   },
-  // {
-  //   year: 2011,
-  //   value: 0,
-  // },
-  // {
-  //   year: 2012,
-  //   value: 70,
-  // },
-  // {
-  //   year: 2013,
-  //   value: 112,
-  // },
-  // {
-  //   year: 2014,
-  //   value: 112,
-  // },
-  // {
-  //   year: 2015,
-  //   value: 90,
-  // },
-  // {
-  //   year: 2016,
-  //   value: 110,
-  // },
-  // {
-  //   year: 2017,
-  //   value: 68,
-  // },
-  // {
-  //   year: 2018,
-  //   value: -35,
-  // },
-  // {
-  //   year: 2019,
-  //   value: -79,
-  // },
-  // {
-  //   year: 2020,
-  //   value: -154,
-  // },
-  // {
-  //   year: 2021,
-  //   value: -75,
-  // },
-  // {
-  //   year: 2022,
-  //   value: -75,
-  // },
-  // {
-  //   year: 2023,
-  //   value: 0,
-  // },
-  // {
-  //   year: 2024,
-  //   value: -2,
-  // },
-  // {
-  //   year: 2025,
-  //   value: -82,
-  // },
-  // {
-  //   year: 2026,
-  //   value: -12,
-  // },
-  // {
-  //   year: 2027,
-  //   value: 13,
-  // },
-  // {
-  //   year: 2028,
-  //   value: 113,
-  // },
-  // {
-  //   year: 2029,
-  //   value: 144,
-  // },
-  // {
-  //   year: 2030,
-  //   value: 79,
-  // },
-  // {
-  //   year: 2031,
-  //   value: 36,
-  // },
-  // {
-  //   year: 2032,
-  //   value: 60,
-  // },
-  // {
-  //   year: 2033,
-  //   value: 32,
-  // },
-  // {
-  //   year: 2034,
-  //   value: -119,
-  // },
-  // {
-  //   year: 2035,
-  //   value: -119,
-  // },
-  // {
-  //   year: 2036,
-  //   value: 50,
-  // },
-  // {
-  //   year: 2037,
-  //   value: 50,
-  // },
-  // {
-  //   year: 2038,
-  //   value: 0,
-  // },
-  // {
-  //   year: 2039,
-  //   value: 26,
-  // },
-  // {
-  //   year: 2040,
-  //   value: 26,
-  // },
+  {
+    year: 2011,
+    value: 0,
+    value2: 70,
+  },
+  {
+    year: 2012,
+    value: 70,
+    value2: 70,
+  },
+  {
+    year: 2013,
+    value: 112,
+    value2: 50,
+  },
+  {
+    year: 2014,
+    value: 112,
+    value2: 130,
+  },
+  {
+    year: 2015,
+    value: 90,
+    value2: 70,
+  },
+  {
+    year: 2016,
+    value: 110,
+    value2: 90,
+  },
+  {
+    year: 2017,
+    value: 68,
+    value2: 90,
+  },
+  {
+    year: 2018,
+    value: -35,
+    value2: 20,
+  },
+  {
+    year: 2019,
+    value: -79,
+    value2: -90,
+  },
+  {
+    year: 2020,
+    value: -154,
+    value2: -40,
+  },
+  {
+    year: 2021,
+    value: -75,
+    value2: 0,
+  },
+  {
+    year: 2022,
+    value: -75,
+    value2: 30,
+  },
+  {
+    year: 2023,
+    value: 0,
+    value2: 70,
+  },
+  {
+    year: 2024,
+    value: -2,
+    value2: 70,
+  },
+  {
+    year: 2025,
+    value: -82,
+    value2: 20,
+  },
+  {
+    year: 2026,
+    value: -12,
+    value2: 70,
+  },
+  {
+    year: 2027,
+    value: 13,
+    value2: 30,
+  },
+  {
+    year: 2028,
+    value: 113,
+    value2: 70,
+  },
+  {
+    year: 2029,
+    value: 144,
+    value2: 40,
+  },
+  {
+    year: 2030,
+    value: 79,
+    value2: 70,
+  },
+  {
+    year: 2031,
+    value: 36,
+    value2: 90,
+  },
+  {
+    year: 2032,
+    value: 60,
+    value2: 70,
+  },
+  {
+    year: 2033,
+    value: 32,
+    value2: 0,
+  },
+  {
+    year: 2034,
+    value: -119,
+    value2: -70,
+  },
+  {
+    year: 2035,
+    value: -119,
+    value2: -50,
+  },
+  {
+    year: 2036,
+    value: 50,
+    value2: -20,
+  },
+  {
+    year: 2037,
+    value: 50,
+    value2: 10,
+  },
+  {
+    year: 2038,
+    value: 0,
+    value2: 40,
+  },
+  {
+    year: 2039,
+    value: 26,
+    value2: 60,
+  },
+  {
+    year: 2040,
+    value: 26,
+    value2: 70,
+  },
   // {
   //   year: 2041,
   //   value: 70,
