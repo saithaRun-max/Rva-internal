@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 
 import Login from "./Login";
 import { useSelector } from "react-redux";
+import { rvaLogoDark, rvaLogoLight } from "@/lib/imagesConstants";
 
 const Header = () => {
   const { theme } = useTheme();
@@ -19,10 +20,7 @@ const Header = () => {
             <div className="flex align-middle justify-between  ">
               <div className="flex">
                 <img
-                  src={
-                   ( theme == "dark") ? "https://app.rahasyavedicastrology.com/_next/static/media/rva-dark.1324b70c.svg"
-                      : "https://app.rahasyavedicastrology.com/_next/static/media/rva.0c5036ce.svg"
-                  }
+                  src={theme == "dark" ? rvaLogoDark : rvaLogoLight}
                   alt="logo"
                   className="w-20 h-7"
                 />
