@@ -8,6 +8,7 @@ import FilterButtonsCharts from "./middleFiltersSection/MiddleFiltersMain";
 import TopFilterSection from "./topDropDownSection/TopFilterSection.jsx";
 import ChartMain from "./GraphsSection/MyLineChart";
 import ChartMainSection from "./GraphsSection/ChartMainSection";
+import gptDailogbox from "../header/gptDailogbox";
 
 const BodyMain = () => {
   return (

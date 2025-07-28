@@ -4,9 +4,12 @@ import React from "react";
 import Theme from "./Theme";
 import { useTheme } from "next-themes";
 
-import Login from "./Login";
+import Login from "./LoginIcon";
 import { useSelector } from "react-redux";
 import { rvaLogoDark, rvaLogoLight } from "@/lib/imagesConstants";
+import { SearchBarDailog } from "./searchbarDialog";
+
+import gptDailogbox from "./gptDailogbox";
 
 const Header = () => {
   const { theme } = useTheme();
@@ -37,6 +40,12 @@ const Header = () => {
                 {/* <div>{cartItems.length}</div> */}
               </div>
               <div className=" flex ">
+                <div className="mr-2">
+                 
+                </div>
+                <div className="mr-2">
+                  <SearchBarDailog />
+                </div>
                 <div className="mr-2">
                   <Theme />
                 </div>

@@ -16,14 +16,14 @@ import {
 import { LogOut, Settings, User } from "lucide-react";
 import React from "react";
 
-const Login = () => {
+const LoginIcon = () => {
   return (
     <div>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button
             variant="default"
-            className="rounded-full bg-[#038399] text-white h-[30px] w-[30px] font-semibold "
+            className="rounded-full bg-[#038399] text-white h-[30px] w-[25px] text-sm font-[helvetica] font-normal pt-2"
           >
             {"RV"}
           </Button>
@@ -52,4 +52,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginIcon;
