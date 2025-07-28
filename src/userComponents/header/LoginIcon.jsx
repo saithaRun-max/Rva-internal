@@ -14,9 +14,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { LogOut, Settings, User } from "lucide-react";
-import React from "react";
+import { useState } from "react";
+import SignInIcon from "./SignInIcon";
 
 const LoginIcon = () => {
+  //if login sign dropdown else sign in
+
   return (
     <div>
       <DropdownMenu>

@@ -10,6 +10,8 @@ import { rvaLogoDark, rvaLogoLight } from "@/lib/imagesConstants";
 import { SearchBarDailog } from "./searchbarDialog";
 
 import gptDailogbox from "./gptDailogbox";
+import SignInIcon from "./SignInIcon";
+import LoginPage from "./LoginPage";
 
 const Header = () => {
   const { theme } = useTheme();
@@ -40,9 +42,7 @@ const Header = () => {
                 {/* <div>{cartItems.length}</div> */}
               </div>
               <div className=" flex ">
-                <div className="mr-2">
-                 
-                </div>
+                <div className="mr-2"></div>
                 <div className="mr-2">
                   <SearchBarDailog />
                 </div>
@@ -50,7 +50,7 @@ const Header = () => {
                   <Theme />
                 </div>
                 <div className=" ">
-                  <Login />
+                  <LoginPage />
                 </div>
               </div>
             </div>
