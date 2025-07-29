@@ -8,7 +8,7 @@ import { useTheme } from "next-themes";
 const page = () => {
   const { theme } = useTheme();
   return (
-    <div className="bg-[#F5F5F5] h-screen w-screen pt-5">
+    <div className="bg-[#F5F5F5] h-full w-screen pt-5">
       <div className="flex justify-center ">
         <a href="#" className="flex items-center font-medium">
           <img
@@ -18,8 +18,9 @@ const page = () => {
           />
         </a>
       </div>
-<div className="pt-5"><RegisterForm /></div>
-      
+      <div className="pt-5">
+        <RegisterForm />
+      </div>
     </div>
   );
 };

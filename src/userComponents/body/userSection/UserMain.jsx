@@ -29,7 +29,7 @@ import { addItem } from "@/ReduxStore/slices/cartSlice";
 
 const UserMain = () => {
   const [name, setName] = useState("User");
-  const [birthTime, setBirthTime] = useState("10-25-00");
+  const [birthTime, setBirthTime] = useState("10:25:00");
   const [birthLocation, setBirthLocation] = useState("Hyderabad");
   const [country, setCountry] = useState("India");
   const dispatch = useDispatch();

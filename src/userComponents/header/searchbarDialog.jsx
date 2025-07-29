@@ -12,6 +12,8 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { ImCommand } from "react-icons/im";
+import { AiOutlineSearch } from "react-icons/ai";
 
 import searchDocumentation from "./searchDocumentation";
 import {
@@ -23,6 +25,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { BsFileEarmark } from "react-icons/bs";
+
+import { searchSuggestions } from "@/lib/searchSuggestionsConstatnt";
 
 export function SearchBarDailog() {
   return (
@@ -30,60 +35,64 @@ export function SearchBarDailog() {
       <form>
         <DialogTrigger asChild>
           <div
-            className={`font-[sans-serif] text-sm font-medium   text-[#777777] dark:text-white dark:opacity-100   md:visible w-64 border rounded-sm py-[6px] pl-4 pr-2 h-8  bg-white hover:bg-white visited:bg-white active:bg-white  flex justify-between`}
+            className={`font-[sans-serif] text-sm font-medium   text-[#777777] dark:text-white dark:opacity-100   md:visible w-64 border rounded-sm py-[6px] pl-4 pr-1  h-8  bg-white hover:bg-white visited:bg-white active:bg-white  flex justify-between`}
           >
-            <span>Search documentation...</span>
-            <span>⌘P</span>
+            <span className="">Search documentation...</span>
+            <div className="rounded border text-xs bg-[#F4F4F5] p-[2px] flex">
+              <ImCommand className="text-sm" />
+              <span className=" ml-[2px] "> P</span>
+            </div>
           </div>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[512px] max-h-[350px] p-0 -mt-20 ">
+        <DialogContent className="sm:max-w-[512px] max-h-[350px] p-0   -mt-20 bg-white   ">
+          <DialogTitle className="hidden">Search documentation</DialogTitle>
           <div>
             <form>
               <div className="">
-                <div className="">
+                <div className="flex align-middle  pl-2 border-b mx-2  h-12 ">
+                  <AiOutlineSearch className="text-xl mt-4" />
                   <Input
-                    id="email"
-                    type="email"
-                    placeholder="m@example.com"
+                    id="search"
+                    type="text"
+                    placeholder="Search Calculations"
                     required
-                    className="border-none"
+                    className="border-none shadow-none h-12"
                   />
                 </div>
-                <div className="grid gap-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="m@example.com"
-                    required
-                  />
-                </div>
-                <div className="grid gap-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="m@example.com"
-                    required
-                  />
-                </div>
-                <div className="grid gap-2">
-                  <div className="flex items-center">
-                    <Label htmlFor="password">Password</Label>
-                    <a
-                      href="#"
-                      className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
-                    >
-                      Forgot your password?
-                    </a>
-                  </div>
-                  <Input id="password" type="password" required />
+                <div className="overflow-y-scroll h-[300px] ">
+                  {searchSuggestions.map((set, i) => (
+                    <div className="" key={i}>
+                      <div className="sticky top-0 bg-white rounded">
+                        <p className="text-xs  font-medium leading-12 font-[helvetica] text-[#506176]  px-10 ">
+                          {Object.keys(set)}
+                        </p>
+                      </div>
+                      <div>
+                        {set[Object.keys(set)]?.map((item, i) => (
+                          <div
+                            key={i}
+                            className="flex align-middle   text-[#555557] font-sans px-6"
+                          >
+                            <div className="h-[46px] w-full hover:bg-[#f0f0f1] rounded-sm flex  px-2 pt-3">
+                              <BsFileEarmark size={18} className="" />
+                              <p className="ml-3  text-sm font-medium">
+                                {item.label}
+                              </p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </form>
           </div>
         </DialogContent>
       </form>
+      <DialogDescription className="hidden">
+        {"search for documentaion"}
+      </DialogDescription>
     </Dialog>
   );
 }

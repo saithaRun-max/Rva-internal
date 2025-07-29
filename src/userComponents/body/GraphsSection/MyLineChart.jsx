@@ -222,7 +222,7 @@ const MyLineChart = () => {
     }
   };
   const BubbleCustomTooltip = ({ active, payload, label }) => {
-    console.log(payload[0]?.payload?.Adasha);
+   
     if (active && payload && payload.length) {
       return (
         <div className="rounded-md bg-[#ffffff] text-black   shadow-lg h-28 w-48 p-2 px-4 border">
