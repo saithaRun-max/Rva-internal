@@ -36,12 +36,22 @@ export function SearchBarDailog() {
       <form>
         <DialogTrigger asChild>
           <div
-            className={`font-[sans-serif] text-sm font-medium   text-[#777777] dark:text-white dark:opacity-100   md:visible w-64 border rounded-sm py-[6px] pl-4 pr-1  h-8  bg-white hover:bg-white visited:bg-white active:bg-white  flex justify-between`}
+            className={`font-[sans-serif] text-sm   font-medium   text-[#777777] dark:text-white dark:opacity-100   md:visible md:w-64 w-28 border rounded-sm md:py-[6px] py-1    md:pl-4 pl-2 pr-1  h-8  bg-white hover:bg-white visited:bg-white active:bg-white  flex justify-between`}
           >
-            <span className="">Search documentation...</span>
-            <div className="rounded border text-xs bg-[#F4F4F5] p-[2px] flex">
-              <ImCommand className="text-sm" />
-              <span className=" ml-[2px] "> P</span>
+            <span className="">
+              Search<span className="md:hidden lg:hidden">...</span>{" "}
+              <span className="hidden md:inline-block lg:inline-block">
+                documentation...
+              </span>
+            </span>
+            <div className="rounded border text-xs bg-[#F4F4F5] md:p-[2px]  ">
+              <div className="hidden md:inline-flex">
+                <ImCommand className="text-sm " />
+                <span className=" ml-[2px] "> P</span>
+              </div>
+              <div className="md:hidden lg:hidden ">
+                <AiOutlineSearch className="text-lg " />
+              </div>
             </div>
           </div>
         </DialogTrigger>

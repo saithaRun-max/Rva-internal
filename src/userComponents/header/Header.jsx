@@ -19,11 +19,11 @@ const Header = () => {
 
   return (
     <>
-      <div className="w-screen h-14 border border-b box-border ">
-        <div className=" min-w-[390px]  max-w-[1210px] mx-auto ">
-          <div className="pt-3 pr-2 ">
-            <div className="flex align-middle justify-between  ">
-              <div className="flex">
+      <div className="w-screen   h-14  border-b box-border ">
+        <div className=" min-w-[440px]  max-w-[1210px] mx-auto ">
+          <div className="pt-3   ">
+            <div className="flex align-middle justify-between  md:w-full lg:w-full  px-2 ">
+              <div className="flex ">
                 <img
                   src={theme == "dark" ? rvaLogoDark : rvaLogoLight}
                   alt="logo"
@@ -39,7 +39,6 @@ const Header = () => {
                   <h5 className=" ml-6">Aspects</h5>
                   <h5 className=" ml-6">Strength</h5>
                 </div>
-                {/* <div>{cartItems.length}</div> */}
               </div>
               <div className=" flex ">
                 <div className="mr-2"></div>
