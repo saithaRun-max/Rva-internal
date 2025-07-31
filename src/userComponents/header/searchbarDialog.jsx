@@ -14,6 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { ImCommand } from "react-icons/im";
 import { AiOutlineSearch } from "react-icons/ai";
+import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 
 import searchDocumentation from "./searchDocumentation";
 import {
@@ -56,19 +57,19 @@ export function SearchBarDailog() {
                     type="text"
                     placeholder="Search Calculations"
                     required
-                    className="border-none shadow-none h-12"
+                    className="border-none shadow-none h-12 focus:ring-0 focus:ring-offset-0 focus-visible:ring-0"
                   />
                 </div>
                 <div className="overflow-y-scroll h-[300px] ">
                   {searchSuggestions.map((set, i) => (
                     <div className="" key={i}>
-                      <div className="sticky top-0 bg-white rounded">
-                        <p className="text-xs  font-medium leading-12 font-[helvetica] text-[#506176]  px-10 ">
-                          {Object.keys(set)}
+                      <div className="sticky top-0 px-10 bg-white rounded">
+                        <p className="text-xs  font-medium leading-12 font-[helvetica] text-[#506176]   ">
+                          {set.name}
                         </p>
                       </div>
                       <div>
-                        {set[Object.keys(set)]?.map((item, i) => (
+                        {set?.items?.map((item, i) => (
                           <div
                             key={i}
                             className="flex align-middle   text-[#555557] font-sans px-6"

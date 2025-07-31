@@ -6,7 +6,7 @@ import TransiteDropdown from "./TransiteDropdown";
 
 const middleFiltersMain = () => {
   return (
-    <div className="w-full h-28">
+    <div className="w-full h-28 hidden md:inline-block lg:inline-block">
       <div className="pt-8 flex">
         <ChartsDropdown />
         <div className="ml-3 mt-3">

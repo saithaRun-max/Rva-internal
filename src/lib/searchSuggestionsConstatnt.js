@@ -1,203 +1,205 @@
 export const searchSuggestions = [
   {
-    Calculators: [
+    name: "Calculators",
+    items: [
       {
         value: "panchang",
         label: "Panchang",
       },
       {
-        value: "panchang",
+        value: "horaMuhurta",
         label: "Hora Muhurta",
       },
       {
-        value: "panchang",
+        value: "choghadiyaMuhurat",
         label: "Choghadiya Muhurat",
       },
       {
-        value: "panchang",
+        value: "moleAstrology",
         label: "Mole Astrology",
       },
       {
-        value: "panchang",
+        value: "tarabalamChakra",
         label: "Tarabalam Chakra",
       },
       {
-        value: "panchang",
+        value: "kpPlanetsMotionChart",
         label: "KP Planets Motion Chart",
       },
       {
-        value: "panchang",
+        value: "babyNameChecker",
         label: "Baby Name Checker",
       },
       {
-        value: "panchang",
+        value: "dreamAstrology",
         label: "Dream Astrology",
       },
       {
-        value: "panchang",
+        value: "lizardAstrolog",
         label: "Lizard Astrology",
       },
       {
-        value: "panchang",
+        value: "nakshatraFinder",
         label: "Nakshatra Finder",
       },
       {
-        value: "panchang",
+        value: "zodiacSignFinder",
         label: "Zodiac Sign Finder",
       },
       {
-        value: "panchang",
+        value: "birthTimeRectification",
         label: "Birth Time Rectification",
-      },
-      {
-        value: "panchang",
-        label: "Panchang",
       },
     ],
   },
   {
-    doshaCheckers: [
+    name: "doshaCheckers",
+    items: [
       {
-        value: "panchang",
+        value: "kujaDoshaCheck",
         label: "Kuja Dosha Check",
       },
       {
-        value: "panchang",
+        value: "sadeSatiCalculator",
         label: "Sade Sati Calculator",
       },
       {
-        value: "panchang",
+        value: "pitraDoshaCheck",
         label: "Pitra Dosha Check",
       },
       {
-        value: "panchang",
+        value: "kalasarpaDoshaFinder",
         label: "Kalasarpa Dosha Finder",
       },
     ],
   },
   {
-    kundali: [
+    name: "kundali",
+    items: [
       {
-        value: "panchang",
-        label: "RVA Softeare",
+        value: "rvaSoftware",
+        label: "RVA Software",
       },
       {
-        value: "panchang",
+        value: "janamKundali",
         label: "Janam Kundali",
       },
       {
-        value: "panchang",
+        value: "kpHorarySoftware",
         label: "KP Horary Software",
       },
       {
-        value: "panchang",
+        value: "meena2NadiSoftware",
         label: "Meena 2 Nadi Software",
       },
       {
-        value: "panchang",
+        value: "astrologyReports",
         label: "Astrology Reports",
       },
       {
-        value: "panchang",
+        value: "mahadashaCalculator",
         label: "Mahadasha Calculator",
       },
       {
-        value: "panchang",
+        value: "currentDasha",
         label: "Current Dasha",
       },
       {
-        value: "panchang",
+        value: "yoginiDasha",
         label: "Yogini Dasha",
       },
       {
-        value: "panchang",
+        value: "charaDasha",
         label: "Chara Dasha",
       },
     ],
   },
   {
-    matching: [
+    name: "matching",
+    items: [
       {
-        value: "panchang",
+        value: "kundaliMatching",
         label: "Kundali Matching",
       },
       {
-        value: "panchang",
+        value: "matchingCalender",
         label: "Matching Calender",
       },
     ],
   },
   {
-    planetStrength: [
+    name: "planetStrength",
+    items: [
       {
-        value: "panchang",
+        value: "astavargaCalculation",
         label: "Astavarga Calculation",
       },
       {
-        value: "panchang",
+        value: "sarvashtakavargaCalculator",
         label: "Sarvashtakavarga Calculator",
       },
       {
-        value: "panchang",
+        value: "fiveFoldFriendship",
         label: "Five Fold Friendship",
       },
       {
-        value: "panchang",
+        value: "shadbalaCalculator",
         label: "Shadbala Calculator",
       },
       {
-        value: "panchang",
+        value: "planetsAvastha",
         label: "Planets Avastha",
       },
       {
-        value: "panchang",
+        value: "vargaStrength",
         label: "Varga Strength",
       },
     ],
   },
   {
-    remedies: [
+    name: "remedies",
+    items: [
       {
-        value: "panchang",
+        value: "gemstoneSuggestion",
         label: "Gemstone Suggestion",
       },
       {
-        value: "panchang",
+        value: "rudrakshaSuggestion",
         label: "Rudraksha Suggestion",
       },
       {
-        value: "panchang",
+        value: "manglikRemedies",
         label: "Manglik Remedies",
       },
       {
-        value: "panchang",
+        value: "sadesatiRemedies",
         label: "Sadesati Remedies",
       },
       {
-        value: "panchang",
+        value: "pitraDoshaRemedies",
         label: "Pitra Dosha Remedies",
       },
       {
-        value: "panchang",
+        value: "lifeStyleRemedies",
         label: "Life Style Remedies",
       },
     ],
   },
   {
-    softwares: [
+    name: "softwares",
+    items: [
       {
-        value: "panchang",
+        value: "muhurthaBuilder",
         label: "Muhurtha Builder",
       },
       {
-        value: "panchang",
+        value: "dailyPredictions",
         label: "Daily Predictions",
       },
       {
-        value: "panchang",
+        value: "CRMforAstrologers",
         label: "CRM for Astrologers",
       },
     ],
   },
-  {},
 ];

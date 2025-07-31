@@ -16,7 +16,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import UserCalender from "./UserCalender";
 import { ChevronDown, Pencil, Save, Trash2 } from "lucide-react";
 
@@ -26,13 +26,26 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import { RiDeleteBin2Fill, RiPencilFill } from "react-icons/ri";
 import { useDispatch } from "react-redux";
 import { addItem } from "@/ReduxStore/slices/cartSlice";
+import { useJsApiLoader, StandaloneSearchBox } from "@react-google-maps/api";
 
 const UserMain = () => {
+  const inputRef = useRef(null);
   const [name, setName] = useState("User");
   const [birthTime, setBirthTime] = useState("10:25:00");
   const [birthLocation, setBirthLocation] = useState("Hyderabad");
   const [country, setCountry] = useState("India");
   const dispatch = useDispatch();
+
+  const { isLoaded } = useJsApiLoader({
+    id: "google-map-script",
+    googleMapsApiKey: process.env.REACT_GOOGLEMAPS_API_KEY,
+    libraries: ["places"],
+  });
+
+  const handleOnPlacesChanged = () => {
+    let address = inputRef.current.getPlaces();
+    console.log(address);
+  };
 
   const handleData = () => {
     dispatch(
@@ -82,7 +95,6 @@ const UserMain = () => {
         onChange={(e) => setCountry(e.target.value)}
       />
       <div className="h-10 w-[270px] border rounded-sm  ml-2 shadow-none p-2 pl-3 flex">
-        {" "}
         <MdOutlineLocationOn className="text-2xl" />
         <Input
           id="birthLocation"
