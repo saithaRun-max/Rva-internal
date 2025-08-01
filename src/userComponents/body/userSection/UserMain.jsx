@@ -59,93 +59,99 @@ const UserMain = () => {
   };
 
   return (
-    <div className="w-full flex  mt-8 ">
-      <Input
-        id="Name"
-        type="text"
-        placeholder="Name"
-        autoComplete="off"
-        className="h-[40px] w-[270px] shadow-none rounded-sm pl-7 "
-        required
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <div className="ml-2">
-        <UserCalender />
+    <div className="w-full md:flex flex-col   mt-8 ">
+      <div className="flex md:flex-col lg:flex-col">
+        <Input
+          id="Name"
+          type="text"
+          placeholder="Name"
+          autoComplete="off"
+          className="h-[40px] md:w-[270px] lg:w-[270px] w-[250px] ml-2 md:ml-0 lg:ml-0 shadow-none rounded-sm pl-7  "
+          required
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <div className="ml-2">
+          <UserCalender />
+        </div>
       </div>
 
-      <Input
-        type="time"
-        step="1"
-        id="birthTime"
-        placeholder="Time"
-        required
-        value={birthTime}
-        onChange={(e) => setBirthTime(e.target.value)}
-        className="bg-background appearance-none h-10 w-[150px] [&::-webkit-calendar-picker-indicator]:hidden [&::-webkit-calendar-picker-indicator]:appearance-none shadow-none ml-2 rounded-sm "
-      />
-
-      <Input
-        id="country"
-        type="text"
-        placeholder="Country"
-        className="h-10 w-[150px] ml-2 rounded-sm  shadow-none"
-        required
-        value={country}
-        onChange={(e) => setCountry(e.target.value)}
-      />
-      <div className="h-10 w-[270px] border rounded-sm  ml-2 shadow-none p-2 pl-3 flex">
-        <MdOutlineLocationOn className="text-2xl" />
+      <div className="flex md:flex-col lg:flex-col mt-3 md:mt-0 lg:mt-0">
         <Input
-          id="birthLocation"
-          type="text"
-          placeholder="Birth Place"
-          className=" -mt-2 border-none"
+          type="time"
+          step="1"
+          id="birthTime"
+          placeholder="Time"
           required
-          value={birthLocation}
-          onChange={(e) => setBirthLocation(e.target.value)}
+          value={birthTime}
+          onChange={(e) => setBirthTime(e.target.value)}
+          className="bg-background appearance-none h-10 w-[150px] [&::-webkit-calendar-picker-indicator]:hidden [&::-webkit-calendar-picker-indicator]:appearance-none shadow-none ml-2 rounded-sm "
+        />
+
+        <Input
+          id="country"
+          type="text"
+          placeholder="Country"
+          className="h-10 md:w-[150px] lg:w-[150px] w-[250px] ml-2 rounded-sm  shadow-none"
+          required
+          value={country}
+          onChange={(e) => setCountry(e.target.value)}
         />
       </div>
-      <div className=" w-[120px] h-10 ml-2 font-[helvetica] text-[14px]  pt-[2px] bg-[#151515] dark:bg-white dark:text-black rounded-sm flex align-middle">
-        <Button
-          className=" hover:bg-[#151515] dark:bg-white dark:text-black hover:text-white text-white rounded-sm h-full m-0 "
-          onClick={handleData}
-          key={"123"}
-        >
-          {"Submit"}{" "}
-        </Button>
-
-        <div className="border-1 dark:border-black opacity-60 h-[70%] mt-1"></div>
-        <DropdownMenu className="">
-          <DropdownMenuTrigger asChild className="">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="w-5 hover:bg-[#151515] hover:text-white dark:hover:bg-white dark:text-black text-white ml-3 focus-visible:ring-0 focus-visible:ring-offset-0"
-            >
-              <ChevronDown />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent
-            className="font-[helvetica] text-lg w-[150px] px-3"
-            align="end"
+      <div className="flex md:flex-col lg:flex-col mt-3 md:mt-0 lg:mt-0">
+        <div className="h-10 w-[270px] border rounded-sm  ml-2 shadow-none p-2 pl-3 flex">
+          <MdOutlineLocationOn className="text-2xl" />
+          <Input
+            id="birthLocation"
+            type="text"
+            placeholder="Birth Place"
+            className=" -mt-2 border-none"
+            required
+            value={birthLocation}
+            onChange={(e) => setBirthLocation(e.target.value)}
+          />
+        </div>
+        <div className=" w-[120px] h-10 ml-2 font-[helvetica] text-[14px]  pt-[2px] bg-[#151515] dark:bg-white dark:text-black rounded-sm flex align-middle">
+          <Button
+            className=" hover:bg-[#151515] dark:bg-white dark:text-black hover:text-white text-white rounded-sm h-full m-0 "
+            onClick={handleData}
+            key={"123"}
           >
-            <DropdownMenuGroup>
-              <DropdownMenuItem>
-                <RiPencilFill />
-                <span className="ml-1">Edit</span>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <FaCloudDownloadAlt />
-                <span className="ml-1">Save</span>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <RiDeleteBin2Fill />
-                <span className="ml-1">Delete</span>
-              </DropdownMenuItem>
-            </DropdownMenuGroup>
-          </DropdownMenuContent>
-        </DropdownMenu>
+            {"Submit"}{" "}
+          </Button>
+
+          <div className="border-1 dark:border-black opacity-60 h-[70%] mt-1"></div>
+          <DropdownMenu className="">
+            <DropdownMenuTrigger asChild className="">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="w-5 hover:bg-[#151515] hover:text-white dark:hover:bg-white dark:text-black text-white ml-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+              >
+                <ChevronDown />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              className="font-[helvetica] text-lg w-[150px] px-3"
+              align="end"
+            >
+              <DropdownMenuGroup>
+                <DropdownMenuItem>
+                  <RiPencilFill />
+                  <span className="ml-1">Edit</span>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <FaCloudDownloadAlt />
+                  <span className="ml-1">Save</span>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <RiDeleteBin2Fill />
+                  <span className="ml-1">Delete</span>
+                </DropdownMenuItem>
+              </DropdownMenuGroup>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
       </div>
     </div>
   );

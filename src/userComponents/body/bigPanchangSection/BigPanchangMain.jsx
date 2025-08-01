@@ -85,7 +85,7 @@ const BigPanchangMain = () => {
         <PanchangIconComponent icon={moonSetIcon} name={"Moon Set"} />
       </div>
 
-      <div className="w-full h-28 mx-2 mt-4 border border-[lightgray] dark:border-[#2b2f3c] rounded-[4px]  md:hidden lg:hidden px-12 grid grid-cols-1 items-center justify-items-center ">
+      <div className=" h-28 mx-2 mt-6 border border-[lightgray] dark:border-[#2b2f3c] rounded-[4px]  md:hidden lg:hidden px-12 grid grid-cols-1 items-center justify-items-center ">
         <Carousel
           opts={{
             align: "start",

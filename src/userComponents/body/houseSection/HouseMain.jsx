@@ -13,7 +13,7 @@ const HouseMain = (transiteStatus) => {
     (store) => store.transitToggleStatus.status
   );
   return (
-    <div className=" md:flex grid gap-10 md:gap-9 md:grid-gap-none px-6 md:px-0 ">
+    <div className=" md:flex grid gap-10 md:gap-9 md:grid-gap-none px-6 md:px-0 mt-3 md:mt-0 lg:mt-0 ">
       <div className="">
         <div className=" my-3 flex  md:hidden lg:hidden">
           <ChartsDropdown />
