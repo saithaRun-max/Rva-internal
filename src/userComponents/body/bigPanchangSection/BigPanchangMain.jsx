@@ -33,6 +33,7 @@ const panchangData = [
   {
     icon: mrigasiraIcon,
     name: "Nakshtra",
+    type: "image",
   },
   {
     icon: "",
@@ -101,9 +102,9 @@ const BigPanchangMain = () => {
               >
                 <div className="p-1">
                   <PanchangIconComponent
-                    icon={item.icon}
-                    name={item.name}
-                    type={""}
+                    icon={item?.icon}
+                    name={item?.name}
+                    type={item?.type}
                   />
                 </div>
               </CarouselItem>

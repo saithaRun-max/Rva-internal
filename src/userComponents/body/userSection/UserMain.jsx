@@ -59,8 +59,8 @@ const UserMain = () => {
   };
 
   return (
-    <div className="w-full md:flex flex-col   mt-8 ">
-      <div className="flex md:flex-col lg:flex-col">
+    <div className="w-full  flex-row md:flex lg:flex   mt-8 ">
+      <div className="flex ">
         <Input
           id="Name"
           type="text"
@@ -76,7 +76,7 @@ const UserMain = () => {
         </div>
       </div>
 
-      <div className="flex md:flex-col lg:flex-col mt-3 md:mt-0 lg:mt-0">
+      <div className="flex mt-3 md:mt-0 lg:mt-0">
         <Input
           type="time"
           step="1"
@@ -98,7 +98,7 @@ const UserMain = () => {
           onChange={(e) => setCountry(e.target.value)}
         />
       </div>
-      <div className="flex md:flex-col lg:flex-col mt-3 md:mt-0 lg:mt-0">
+      <div className="flex  mt-3 md:mt-0 lg:mt-0">
         <div className="h-10 w-[270px] border rounded-sm  ml-2 shadow-none p-2 pl-3 flex">
           <MdOutlineLocationOn className="text-2xl" />
           <Input
