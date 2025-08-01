@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <>
       <div className="w-screen   h-14  border-b box-border ">
-        <div className=" min-w-[440px]  max-w-[1210px] mx-auto ">
+        <div className=" max-w-[1210px] mx-auto ">
           <div className="pt-3   ">
             <div className="flex align-middle justify-between  md:w-full lg:w-full  px-2 ">
               <div className="flex ">

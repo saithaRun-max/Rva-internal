@@ -12,7 +12,7 @@ import Advanced from "./Advanced";
 
 const TopFilterSection = () => {
   return (
-    <div className="flex justify-between mt-4">
+    <div className=" justify-between mt-4 hidden md:inline-flex lg:inline-flex">
       <Transit />
       <Language />
       <ChartType />
